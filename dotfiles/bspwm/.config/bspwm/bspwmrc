@@ -69,7 +69,7 @@ ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
 # Fix some custom keyboard shortcuts
-xkbcomp layout.xkb $DISPLAY &
+xkbcomp $HOME/.config/xkb/layout.xkb $DISPLAY &
 
 # Set mouse sensitivity
 xinput --set-prop 'Microsoft Microsoft Pro Intellimouse Mouse' \

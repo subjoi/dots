@@ -12,7 +12,7 @@ super + shift + Return
 
 # dmenu collections
 alt + F1
-	rofi -show drun -theme ~/.config/rofi/pfp.rasi
+	rofi -show drun
 	#sh ~/.config/rofi/bin/launcher
 
 ctrl + alt + x
