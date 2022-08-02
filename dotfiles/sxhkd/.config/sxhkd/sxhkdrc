@@ -13,7 +13,9 @@ super + shift + Return
 # dmenu collections
 alt + F1
 	rofi -show drun
-	#sh ~/.config/rofi/bin/launcher
+
+super + Tab
+	rofi -show window
 
 ctrl + alt + x
     sh ~/.config/rofi/bin/powermenu
