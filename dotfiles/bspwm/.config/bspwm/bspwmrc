@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="${PATH}:$HOME/.local/bin:$HOME:/.config/bspwm/bin"
+export PATH="${PATH}:$HOME/.local/bin:$HOME/.config/bspwm/bin"
 
 bspc config focused_border_color "#96CDFB"
 bspc config normal_border_color "#1E1E2E"
