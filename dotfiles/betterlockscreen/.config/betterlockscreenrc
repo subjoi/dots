@@ -1,0 +1,61 @@
+# ~/.config/betterlockscreenrc
+
+# default options
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dim blur dimblur pixel dimpixel color)
+dim_level=40
+blur_level=0.3
+pixel_scale=10,1000
+solid_color=333333
+wallpaper_cmd="feh --bg-fill"
+# i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
+
+# default theme
+loginbox=00000066
+
+loginshadow=00000000
+
+locktext="Welcome."
+
+font="Inter 12"
+
+ringcolor=ffffff00
+
+insidecolor=00000066
+
+separatorcolor=00000000
+
+ringvercolor=374fba00
+
+insidevercolor=00000000
+
+ringwrongcolor=5b5b5b00
+
+#Color for "faliure text if incorrect password
+wrongcolor=ffffff66
+#Color for circle when "Failure" comes up
+insidewrongcolor=ff007f15
+
+#Time format and color
+time_format="%a %H:%M:%S"
+timecolor=ff007f85
+
+#"Welcome color"
+greetercolor=ff007f55
+#Language layout color
+layoutcolor=ff007f00
+
+#Color in ring for each key press
+keyhlcolor=ff007f90
+#Color in ring for each backslash
+bshlcolor=ff007f30
+
+
+verifcolor=D23C3D00
+
+
+modifcolor=ffffffff
+
+bgcolor=000000ff
