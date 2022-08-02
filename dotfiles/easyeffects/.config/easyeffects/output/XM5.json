@@ -1,0 +1,25 @@
+{
+    "output": {
+        "autogain": {
+            "bypass": false,
+            "input-gain": 0.0,
+            "maximum-history": 15,
+            "output-gain": 0.0,
+            "reference": "Geometric Mean (MSI)",
+            "target": -0.5000000000000259
+        },
+        "blocklist": [],
+        "convolver": {
+            "autogain": false,
+            "bypass": false,
+            "input-gain": -2.0,
+            "ir-width": 100,
+            "kernel-path": "/home/subjoi/.config/easyeffects/irs/results_rtings_rtings_harman_over-ear_2018_Sony WH-1000XM5_Sony WH-1000XM5 minimum phase 44100Hz.irs",
+            "output-gain": 0.0
+        },
+        "plugins_order": [
+            "autogain",
+            "convolver"
+        ]
+    }
+}
