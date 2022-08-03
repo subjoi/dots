@@ -1315,13 +1315,13 @@ xkb_symbols "pc_se_inet(evdev)" {
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
         type= "CUST_CAPSLOCK",
-        symbols[Group1]= [               a,               A,        XF86AudioLowerVolume ],
-        actions[Group1]= [ NoAction(), NoAction(), Redirectkey(keycode=<VOL->, clearmods=Lock) ]
+        symbols[Group1]= [               a,               A,        XF86AudioMuteVolume],
+        actions[Group1]= [ NoAction(), NoAction(), Redirectkey(keycode=<MUTE>, clearmods=Lock) ]
     };
     key <AC02> {
         type= "CUST_CAPSLOCK",
-        symbols[Group1]= [               s,               S,          XF86AudioMuteVolume ],
-        actions[Group1]= [ NoAction(), NoAction(), Redirectkey(keycode=<MUTE>, clearmods=Lock) ]
+        symbols[Group1]= [               s,               S,          XF86AudioLowerVolume ],
+        actions[Group1]= [ NoAction(), NoAction(), Redirectkey(keycode=<VOL->, clearmods=Lock) ]
 
     };
     key <AC03> {
