@@ -60,9 +60,9 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 ctrl + alt + shift + l
     betterlockscreen -l dimblur
 
-# Toggle lockscreen. ~/.local/bin/toggle_screenlock
+# Toggle lockscreen. ~/.config/bin/toggle_screenlock.sh
 ctrl + alt + l
-	toggle_screenlock
+	toggle_screenlock.sh
 
 # Reload Keybindings
 super + Escape

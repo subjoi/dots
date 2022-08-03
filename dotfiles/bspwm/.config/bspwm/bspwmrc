@@ -11,7 +11,6 @@ bspc monitor HDMI-0 -d    
 bspc config border_width 2
 bspc config window_gap 5
 bspc config split_ratio 0.50
-
 bspc config borderless_monocle true
 bspc config gapless_monocle false
 bspc config single_monocle false
@@ -20,9 +19,7 @@ bspc config focus_follows_pointer false
 bspc rule -r *:*
 bspc rule -a firefox desktop='^2'
 bspc rule -a Tor Browser desktop='^3'
-
 bspc rule -a *:*:'Friends List' desktop='5' state=floating rectangle=680x480+19440+60
-
 bspc rule -a discord desktop='^9' state=floating rectangle=1800x970+2010+60
 bspc rule -a Blueman-manager desktop='^6' state=psuedo
 bspc rule -a easyeffects desktop='^6' state=psuedo
@@ -32,28 +29,15 @@ bspc rule -a pcloud desktop='^7' state=floating rectangle=985x425+2828+645
 bspc rule -a monero-core desktop='^7' state=floating rectangle=880x600+1934+40
 bspc rule -a 'Mullvad VPN' desktop='^7' state=floating rectangle=320x600+2475+40
 
-
+# Kill if already running
+killall -9 sxhkd xsettingsd dunst xfce4-power-manager redshift picom xautolock wired
 
 # Floating nodes 
 declare -a floatingwin=(Xdotool-gui Lxappearance flameshot ptxconf.py MultiMC5 bspfloat qt5ct)
 for i in ${floatingwin[@]}; do
     bspc rule -a $i state=floating follow=on focus=on; done 
-    
-# Kill if already running
-killall -9 sxhkd xsettingsd dunst xfce4-power-manager redshift picom xautolock wired
 
-mullvad-vpn &
-#wired &
-dunst > /dev/null 2>&1 &
-discord-canary &
-#easyeffects &
-pavucontrol &
-blueman-manager &
-pcloud &
-keepassxc &
-/opt/urserver/urserver --daemon &
-/usr/lib/xfce-polkit/xfce-polkit &
-
+# System startups
 bash $HOME/.fehbg
 sxhkd &
 DISPLAY=":0" picom --experimental-backend &
@@ -61,20 +45,34 @@ $HOME/.config/polybar.old/launch.sh &
 xfce4-power-manager &
 playerctld daemon &
 xsetroot -cursor_name left_ptr
-
-ksuperkey -e 'Super_L=Alt_L|F1' &
-ksuperkey -e 'Super_R=Alt_L|F1' &
+/usr/lib/xfce-polkit/xfce-polkit &
+dunst > /dev/null 2>&1 &
+mullvad-vpn &
 
 # Fix some custom keyboard shortcuts
 xkbcomp $HOME/.config/xkb/layout.xkb $DISPLAY &
 
+# User startups
+#wired &
+discord-canary &
+#easyeffects &
+pavucontrol &
+blueman-manager &
+pcloud &
+keepassxc &
+/opt/urserver/urserver --daemon &
+
+
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
 # Set mouse sensitivity
 xinput --set-prop 'Microsoft Microsoft Pro Intellimouse Mouse' \
-                  'libinput Accel Speed' -0.4 &
+                  'libinput Accel Speed' -0.4 & 
 xinput --set-prop 8 'libinput Accel Speed' -0.6 &
 
 ### Auto screenlock
-lockscreen.sh && dunstify -u low "Lockscreen enabled" &
+lockscreen.sh &
 
-sleep 5
+sleep 3
 firefox &
