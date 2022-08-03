@@ -74,5 +74,5 @@ xinput --set-prop 8 'libinput Accel Speed' -0.6 &
 ### Auto screenlock
 lockscreen.sh &
 
-sleep 3
+sleep 1
 firefox &

@@ -1,14 +1,15 @@
 #!/bin/bash
 
 URL=$1
-BASEDIR="${HOME}/Videos/memes"
+DIR="${HOME}/Videos/memes/reddit"
 
-yt-dlp --replace-in-metadata "title" "[ _]" "-"  -o "${BASEDIR}/%(title)s.%(ext)s" $URL 1> /dev/null
+
+yt-dlp --replace-in-metadata "title" "[ _]" "-"  -o "${DIR}/%(title)s.%(ext)s" $URL 1> /dev/null
 
 if [[ $? -gt "0" ]]; then
   dunstify "Failed" "Exit code: $?"
 else
-  dunstify --replace 69 \
+  dunstify -u low \
   -i "/usr/share/icons/Papirus-Dark/48x48/categories/advanced-rest-client.svg" \
   "Success"
 fi
