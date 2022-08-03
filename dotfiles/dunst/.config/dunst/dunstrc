@@ -22,13 +22,13 @@
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 0
+    notification_limit = 1
 
     ### Progress bar ###
 
     # Turn on the progess bar. It appears when a progress hint is passed with
     # for example dunstify -h int:value:12
-    progress_bar = true
+    progress_bar = false
   
     progress_bar_hightlight = ${colors.BLUE}
 
@@ -85,7 +85,7 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 120
+    idle_threshold = 5
 
     ### Text ###
 
@@ -164,7 +164,8 @@
     icon_position = left
     min_icon_size = 0
     max_icon_size = 48
-    icon_path = /usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/devices:/usr/share/icons/Paper/48x48/devices
+    icon_path = /usr/share/icons/Oranchelo/status:/usr/share/icons/Oranchelo/actions:/usr/share/icons/Oranchelo/categories/scalable:/usr/share/icons/Oranchelo/devices/scalable:/usr/share/icons/Oranchelo/emblems/scalable:/usr/share/icons/Oranchelo/places/symbolic
+    #icon_path = /usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/devices:/usr/share/icons/Paper/48x48/devices
 
     ### History ###
     sticky_history = yes

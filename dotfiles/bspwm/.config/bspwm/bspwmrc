@@ -21,11 +21,9 @@ bspc rule -r *:*
 bspc rule -a firefox desktop='^2'
 bspc rule -a Tor Browser desktop='^3'
 
-bspc rule -a steam desktop='^0' state=floating
-bspc rule -a *:*:'Friends List' desktop='9' state=floating rectangle=680x480+19440+60
+bspc rule -a *:*:'Friends List' desktop='5' state=floating rectangle=680x480+19440+60
 
 bspc rule -a discord desktop='^9' state=floating rectangle=1800x970+2010+60
-bspc rule -a *:*:Spotify desktop='^9' state=flating rectangle=800x600+1940+93
 bspc rule -a Blueman-manager desktop='^6' state=psuedo
 bspc rule -a easyeffects desktop='^6' state=psuedo
 bspc rule -a Pavucontrol desktop='^6' state=psuedo
@@ -50,7 +48,6 @@ dunst > /dev/null 2>&1 &
 discord-canary &
 #easyeffects &
 pavucontrol &
-firefox &
 blueman-manager &
 pcloud &
 keepassxc &
@@ -77,4 +74,7 @@ xinput --set-prop 'Microsoft Microsoft Pro Intellimouse Mouse' \
 xinput --set-prop 8 'libinput Accel Speed' -0.6 &
 
 ### Auto screenlock
-lockscreen.sh &
+lockscreen.sh && dunstify -u low "Lockscreen enabled" &
+
+sleep 5
+firefox &
