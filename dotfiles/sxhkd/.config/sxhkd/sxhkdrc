@@ -42,7 +42,7 @@ Print
 
 #Music Control
 XF86Audio{Play,Stop}
-    media{-toggle,-toggle}
+    media-toggle.sh
 #    media{-toggle,-toggle,-prev,-next}
 
 
@@ -52,7 +52,7 @@ XF86Audio{Prev,Next}
 
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-    volume{ "inc", "dec", "mute"}
+    volume.sh{ "inc", "dec", "mute"}
 
 ##---------- Bspwm ----------##
 
