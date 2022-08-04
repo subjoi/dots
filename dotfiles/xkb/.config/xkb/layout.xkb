@@ -1371,7 +1371,7 @@ xkb_symbols "pc_se_inet(evdev)" {
     };
     key <TLDE> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [         section,         onehalf,       paragraph,   threequarters ]
+        symbols[Group1]= [         Escape,         onehalf,       paragraph,   threequarters ]
     };
     key <LFSH> {         [         Shift_L ] };
     key <BKSL> {
