@@ -21,7 +21,7 @@ Plug 'kovetskiy/sxhkd-vim'
 
 call plug#end()
 
-
+source ${HOME}/.vim/functions.vim
 noh
 syntax on
 set nocompatible

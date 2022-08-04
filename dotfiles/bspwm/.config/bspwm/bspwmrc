@@ -33,7 +33,7 @@ bspc rule -a 'Mullvad VPN' desktop='^7' state=floating rectangle=320x600+2475+40
 killall -9 sxhkd xsettingsd dunst xfce4-power-manager redshift picom xautolock wired
 
 # Floating nodes 
-declare -a floatingwin=(Xdotool-gui Lxappearance flameshot ptxconf.py MultiMC5 bspfloat qt5ct)
+declare -a floatingwin=(timeshift-gtk Xdotool-gui Lxappearance flameshot ptxconf.py MultiMC5 bspfloat qt5ct)
 for i in ${floatingwin[@]}; do
     bspc rule -a $i state=floating follow=on focus=on; done 
 
