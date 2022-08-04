@@ -3,10 +3,8 @@
 if pidof xautolock > /dev/null
 then
   #On
-  printf "Screenlock On"
+  printf "Lockscreen On"
 else
   #Off
-  printf "Screenlock Off"
+  printf "Lockscreen Off"
 fi
-    
-

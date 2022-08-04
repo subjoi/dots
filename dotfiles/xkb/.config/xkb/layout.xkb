@@ -1206,51 +1206,51 @@ xkb_symbols "pc_se_inet(evdev)" {
     key  <ESC> {         [          Escape ] };
     key <AE01> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               1,          exclam,      exclamdown,     onesuperior ]
+        symbols[Group1]= [               1,          exclam,      exclamdown,     F1 ]
     };
     key <AE02> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               2,        quotedbl,              at,     twosuperior ]
+        symbols[Group1]= [               2,        quotedbl,              at,     F2 ]
     };
     key <AE03> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               3,      numbersign,        sterling,   threesuperior ]
+        symbols[Group1]= [               3,      numbersign,        sterling,   F3 ]
     };
     key <AE04> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               4,        currency,          dollar,      onequarter ]
+        symbols[Group1]= [               4,        currency,          dollar,      F4 ]
     };
     key <AE05> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               5,         percent,        EuroSign,            cent ]
+        symbols[Group1]= [               5,         percent,        EuroSign,            F5 ]
     };
     key <AE06> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               6,       ampersand,             yen,     fiveeighths ]
+        symbols[Group1]= [               6,       ampersand,             yen,     F6 ]
     };
     key <AE07> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               7,           slash,       braceleft,        division ]
+        symbols[Group1]= [               7,           slash,       braceleft,        F7 ]
     };
     key <AE08> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               8,       parenleft,     bracketleft,   guillemotleft ]
+        symbols[Group1]= [               8,       parenleft,     bracketleft,   F8 ]
     };
     key <AE09> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               9,      parenright,    bracketright,  guillemotright ]
+        symbols[Group1]= [               9,      parenright,    bracketright,  F9 ]
     };
     key <AE10> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               0,           equal,      braceright,          degree ]
+        symbols[Group1]= [               0,           equal,      braceright,          F10 ]
     };
     key <AE11> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [            plus,        question,       backslash,    questiondown ]
+        symbols[Group1]= [            plus,        question,       backslash,    F11 ]
     };
     key <AE12> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [      dead_acute,      dead_grave,       plusminus,         notsign ]
+        symbols[Group1]= [      dead_acute,      dead_grave,       plusminus,         F12 ]
     };
     key <BKSP> {         [       BackSpace,       BackSpace ] };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };

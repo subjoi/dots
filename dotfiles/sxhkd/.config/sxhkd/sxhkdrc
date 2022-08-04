@@ -12,14 +12,14 @@ super + shift + Return
 
 # dmenu collections
 alt + F1
-	rofi -show drun
+rofi -show drun
 
 super + Tab
-	rofi -show window
+rofi -show window
 
 
 super + F1
-	sxhkhmenu
+sxhkhmenu
 
 ##---------- Applications ----------##
 super + shift + w
@@ -48,7 +48,7 @@ ctrl + alt + shift + l
     betterlockscreen -l dimblur
 
 ctrl + alt + l
-	toggle_screenlock.sh
+toggle_screenlock.sh
 
 super + Escape
     pkill -USR1 -x sxhkd && dunstify -u low "sxhkd reloaded"

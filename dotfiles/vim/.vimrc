@@ -23,7 +23,6 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
 
-source ${HOME}/.vim/functions.vim
 noh
 syntax on
 set nocompatible
@@ -55,8 +54,6 @@ set statusline=%1*\ file\ %3*\ %f\ %4*\
 set statusline+=%=\
 set statusline+=%3*\ %l\ of\ %L\ %2*\ line\
 set scrolloff=8
-set viminfo=
-set ttyfast
 let mapleader = ","
 let maplocalleader="\<Space>"
 

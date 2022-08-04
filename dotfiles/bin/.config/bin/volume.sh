@@ -1,13 +1,11 @@
 #!/bin/bash
 
-#
-
 VOLUME=$(pamixer --get-volume)
 MUTED=$(pamixer --get-mute)
 
 muted(){
 if [[ "$MUTED" == "true" ]]; then
-  return 1
+  return 0
 fi
 }
 
