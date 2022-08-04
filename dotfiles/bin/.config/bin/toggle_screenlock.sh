@@ -6,6 +6,6 @@ then
     dunstify -r 65 -u low "Screenlock disabled"
   sleep 1
 else
-  lockscreen & 
+  lockscreen.sh & 
   dunstify -r 65 -u low "Screenlock enabled"
 fi
