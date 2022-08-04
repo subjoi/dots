@@ -41,7 +41,7 @@ for i in ${floatingwin[@]}; do
 mullvad-vpn &
 bash $HOME/.fehbg
 sxhkd &
-DISPLAY=":0" picom --experimental-backend &
+DISPLAY=":0" picom -b --experimental-backend &
 $HOME/.config/polybar.old/launch.sh &
 xfce4-power-manager &
 playerctld daemon &
@@ -49,16 +49,12 @@ xsetroot -cursor_name left_ptr
 /usr/lib/xfce-polkit/xfce-polkit &
 dunst > /dev/null 2>&1 &
 
-# Fix some custom keyboard shortcuts
 xkbcomp $HOME/.config/xkb/layout.xkb $DISPLAY &
 
 # User startups
-#wired &
 discord-canary &
-#easyeffects &
 pavucontrol &
 blueman-manager &
-
 
 ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &

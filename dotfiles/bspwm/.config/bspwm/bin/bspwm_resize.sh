@@ -1,6 +1,6 @@
 #!/bin/bash
 
-size=${2:-'10'}
+size=${2:-'50'}
 dir=$1
 
 # Find current window mode
@@ -39,3 +39,5 @@ else
                 ;;
                 esac
 fi
+
+echo "${size}"

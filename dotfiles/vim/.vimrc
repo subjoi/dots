@@ -18,6 +18,8 @@ Plug 'mhinz/vim-startify'
 Plug 'plasticboy/vim-markdown'
 Plug 'valloric/matchtagalways'
 Plug 'kovetskiy/sxhkd-vim'
+Plug 'lambdalisue/vim-manpager'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
 
@@ -48,7 +50,6 @@ set cmdheight=1
 set laststatus=2
 set backspace=indent,eol,start
 set list
-set listchars=tab:\│\
 set matchpairs+=<:>
 set statusline=%1*\ file\ %3*\ %f\ %4*\
 set statusline+=%=\
@@ -59,32 +60,26 @@ set ttyfast
 let mapleader = ","
 let maplocalleader="\<Space>"
 
+set undofile
+set undodir=~/.vim/undo
+set noswapfile
+
 filetype on
 filetype indent on
 filetype plugin on
 
-" Colors
-set t_Co=255
-hi linenr ctermfg=8
-hi cursorline cterm=NONE
-hi cursorlinenr ctermfg=15
-hi comment ctermfg=8
-hi pmenu ctermbg=0 ctermfg=NONE
-hi pmenusel ctermbg=4 ctermfg=0
-hi pmenusbar ctermbg=0
-hi pmenuthumb ctermbg=7
-hi matchparen ctermbg=black ctermfg=NONE
-hi search ctermbg=0
-hi statusline ctermbg=0 ctermfg=NONE
-hi statuslinenc ctermbg=0 ctermfg=0
-hi user1 ctermbg=1 ctermfg=0
-hi user2 ctermbg=4 ctermfg=0
-hi user3 ctermbg=0 ctermfg=NONE
-hi user4 ctermbg=NONE ctermfg=NONE
-hi group1 ctermbg=NONE ctermfg=0
-autocmd colorscheme * hi clear cursorline
-match group1 /\t/
+if &term =~ '256color'
+  " Enable true (24-bit) colors instead of (8-bit) 256 colors.
+  " :h true-color
+  if has('termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+  endif
+  colorscheme catppuccin_mocha
+endif
 
+set noshowmode
 
 nmap <C-S> :w<CR>
 nmap <C-_> :noh<CR>

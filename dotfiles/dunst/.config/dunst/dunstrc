@@ -1,14 +1,10 @@
 # See dunst(5) for all configuration options
 
 [global]
-
     monitor = 0
-
-    #   mouse,keyboard,none
     follow = none
-
-
-    # width = (0, 300)
+   
+    width = (0, 300)
     width = (300, 500)
     height = 100
 
@@ -72,7 +68,7 @@
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
     frame_width = 2
-    frame_color = "#96CDFB"
+    frame_color = "#89B4FA"
 
     # possible values are: auto,foreground,frame,anything
     separator_color = frame
@@ -231,18 +227,14 @@
 
 
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
     background = "#1E1E2E"
-    foreground = "#D9E0EE"
+    foreground = "#CDD6F4"
     timeout = 10
-    # Icon for notifications with low urgency, uncomment to enable
     default_icon = /usr/share/icons/Arc/actions/24@2x/gtk-goto-last-ltr.png
-    #default_icon = /usr/share/icons/Paper/48x48/status/user-invisible.png
 
 [urgency_normal]
     background = "#1E1E2E"
-    foreground = "#D9E0EE"
+    foreground = "#CDD6F4"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /usr/share/icons/Paper/48x48/status/user-invisible.png
@@ -250,8 +242,8 @@
 
 [urgency_critical]
     background = "#1E1E2E"
-    foreground = "#D9E0EE"
-    frame_color = "#F28FAD"
+    foreground = "#CDD6F4"
+    frame_color = "#FAB387"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     default_icon = /usr/share/icons/Arc/actions/24@2x/application-exit.png
