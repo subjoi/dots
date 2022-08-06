@@ -25,6 +25,7 @@ bspc rule -a Blueman-manager desktop='^6' state=psuedo
 bspc rule -a easyeffects desktop='^6' state=psuedo
 bspc rule -a Pavucontrol desktop='^6' state=psuedo
 bspc rule -a KeePassXC desktop='^7' state=floating rectangle=1005x600+2822+40
+bspc rule -a kdeconnect-app desktop='^7' state floating rectangle=990x410+2822+650
 bspc rule -a pcloud desktop='^7' state=floating rectangle=985x425+2828+645
 bspc rule -a monero-core desktop='^7' state=floating rectangle=880x600+1934+40
 bspc rule -a 'Mullvad VPN' desktop='^7' state=floating rectangle=320x600+2475+40
