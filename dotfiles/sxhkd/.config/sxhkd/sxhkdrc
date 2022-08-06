@@ -12,14 +12,13 @@ super + shift + Return
 
 # dmenu collections
 alt + F1
-rofi -show drun
+    rofi -config ~/.config/rofi-catppuccin/config.rasi -theme /home/subjoi/.local/share/rofi/themes/catppuccin-mocha.rasi -show drun
 
 super + Tab
-rofi -show window
-
+    rofi -config ~/.config/rofi-catppuccin/config.rasi -theme /home/subjoi/.local/share/rofi/themes/catppuccin-mocha.rasi -location 0 -show window
 
 super + F1
-sxhkhmenu
+    sxhkhmenu
 
 ##---------- Applications ----------##
 super + shift + w
@@ -48,10 +47,13 @@ ctrl + alt + shift + l
     betterlockscreen -l dimblur
 
 ctrl + alt + l
-toggle_screenlock.sh
+    toggle_screenlock.sh
 
-super + Escape
-    pkill -USR1 -x sxhkd && dunstify -u low "sxhkd reloaded"
+super + 0 
+    pkill -USR1 -x sxhkd && dunstify "sxhkd reloaded"
+
+alt + Escape
+    dunstify "works"
 
 ctrl + alt + {q,r}
     bspc {quit,wm -r}

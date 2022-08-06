@@ -51,14 +51,14 @@ COLOR_DISCONNECTED="#F28FAD"
 
 ## [Set 8 favorite VPN locations]
 # These are passed to your VPN as `$VPNCOMMAND_RELAY_SET_LOCATION <input>`.
-VPN_LOCATIONS=("se" "no" "dk" "us" "sz" "au" "fr" "br")
+VPN_LOCATIONS=("se" "no" "dk" "us" "ch" "fi" "de" "nl" )
 
 ## [Set optional rofi menu style]. `man rofi` for help.
 icon_connect=
 icon_fav=
-icon_country=
+icon_country=
 rofi_font="MesloLGL Nerd Font  12"
-rofi_theme="~/.config/rofi/rofi-themes/cherry.rasi"
+rofi_theme="~/.config/rofi/config.rasi"
 rofi_location="-location 3 -xoffset -150 -yoffset 80"
 rofi_menu_name="$VPN_PROVIDER VPN"
 
