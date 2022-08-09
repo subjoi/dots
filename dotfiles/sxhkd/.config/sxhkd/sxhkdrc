@@ -1,5 +1,8 @@
 ##---------- Keybindings for bspwm ----------##
 
+ctrl + alt + d
+  dunstify "dave.xn--6frz82g"
+
 # Terminal 
 super + Return
     kitty
@@ -27,6 +30,9 @@ super + shift + w
 super + shift + f
     thunar
 
+super + shift + n
+    variety -n
+
 ##---------- System ----------##
 
 Print
@@ -49,11 +55,8 @@ ctrl + alt + shift + l
 ctrl + alt + l
     toggle_screenlock.sh
 
-super + Escape
+ctrl + alt + 0
     pkill -USR1 -x sxhkd && dunstify "sxhkd reloaded"
-
-alt + Escape
-    dunstify "works"
 
 ctrl + alt + {q,r}
     bspc {quit,wm -r}

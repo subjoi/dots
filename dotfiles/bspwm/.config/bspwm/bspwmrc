@@ -24,6 +24,7 @@ bspc rule -a discord desktop='^9' state=floating rectangle=1800x970+2010+60
 bspc rule -a Blueman-manager desktop='^6' state=psuedo
 bspc rule -a easyeffects desktop='^6' state=psuedo
 bspc rule -a Pavucontrol desktop='^6' state=psuedo
+bspc rule -a Variety state=floating
 bspc rule -a KeePassXC desktop='^7' state=floating rectangle=1005x600+2822+40
 bspc rule -a kdeconnect-app desktop='^7' state floating rectangle=990x410+2822+650
 bspc rule -a pcloud desktop='^7' state=floating rectangle=985x425+2828+645
@@ -40,7 +41,8 @@ for i in ${floatingwin[@]}; do
 
 # System startups
 mullvad-vpn &
-bash $HOME/.fehbg
+#bash $HOME/.fehbg
+variety &
 sxhkd &
 DISPLAY=":0" picom -b --experimental-backend &
 $HOME/.config/polybar.old/launch.sh &
